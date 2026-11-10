@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>课程知识助手 · 隐私政策</title>
+<style>
+  :root {
+    --bg: #f5f6f8; --card: #ffffff; --txt: #1f2329; --sub: #5b6270;
+    --line: #e3e6eb; --brand: #0b63f6; --chip: #eaf1ff; --chipTxt: #0b53c4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1014; --card: #1a1d23; --txt: #e9ecf2; --sub: #a6adba;
+      --line: #2a2f38; --brand: #5b9cff; --chip: #1b2c46; --chipTxt: #8ab8ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 40px 20px 72px; background: var(--bg); color: var(--txt);
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    line-height: 1.85; font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { margin-bottom: 28px; }
+  .badge {
+    display: inline-block; font-size: 12px; letter-spacing: .04em;
+    color: var(--chipTxt); background: var(--chip);
+    padding: 4px 10px; border-radius: 6px; margin-bottom: 14px;
+  }
+  h1 { font-size: 27px; margin: 0 0 10px; letter-spacing: -.01em; }
+  .meta { font-size: 13px; color: var(--sub); }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 26px 26px 8px; margin-bottom: 16px;
+  }
+  h2 {
+    font-size: 17px; margin: 26px 0 10px; padding-left: 11px;
+    border-left: 3px solid var(--brand); line-height: 1.4;
+  }
+  .card > h2:first-child { margin-top: 4px; }
+  h3 { font-size: 15px; margin: 20px 0 6px; color: var(--txt); }
+  p { margin: 9px 0; color: var(--sub); }
+  strong { color: var(--txt); font-weight: 600; }
+  ul { margin: 9px 0; padding-left: 20px; color: var(--sub); }
+  li { margin: 5px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13.5px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--txt); font-weight: 600; background: var(--bg); }
+  td { color: var(--sub); }
+  .note {
+    background: var(--chip); border-radius: 10px; padding: 14px 16px;
+    font-size: 13.5px; color: var(--chipTxt); margin: 16px 0;
+  }
+  .note strong { color: var(--chipTxt); }
+  a { color: var(--brand); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { text-align: center; font-size: 12.5px; color: var(--sub); margin-top: 34px; }
+  code {
+    background: var(--bg); border: 1px solid var(--line); border-radius: 4px;
+    padding: 1px 5px; font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="badge">课程知识助手 · HarmonyOS</div>
+    <h1>隐私政策</h1>
+    <div class="meta">生效日期：2026 年 11 月 10 日 &nbsp;·&nbsp; 版本 v1.0</div>
+  </header>
+
+  <div class="card">
+    <div class="note">
+      <strong>一句话概括：</strong>本应用是一个本地优先的学习工具。你的课程资料、问答记录、题库与答题进度全部保存在你自己的设备上；开发者不设服务器、不收集、不上传、不分析你的任何个人数据。
+    </div>
+
+    <h2>一、我们是谁</h2>
+    <p>「课程知识助手」（以下简称"本应用"）是一款运行于 HarmonyOS 的学习辅助应用，提供课程资料检索、问答溯源、学习记录整理与期末复习刷题功能。</p>
+    <p>本应用由个人开发者独立开发与维护，联系方式见文末第九节。</p>
+
+    <h2>二、我们如何处理你的数据</h2>
+
+    <h3>2.1 完全保存在本地的数据</h3>
+    <p>以下数据仅存储在你的设备本地（应用沙箱内的数据库与首选项），<strong>不会上传至开发者或任何第三方</strong>：</p>
+    <ul>
+      <li>你导入的课程资料原文及其切分后的文本片段、检索索引</li>
+      <li>问答历史记录（问题、答案、引用来源、耗时）</li>
+      <li>题库、答题记录、错题本、收藏题、答题进度与正确率统计</li>
+      <li>应用设置，包括深色模式、检索条数上限等</li>
+    </ul>
+    <p>卸载应用后，上述数据随之删除，开发者无法也不会保留副本。</p>
+
+    <h3>2.2 文件访问</h3>
+    <p>当你主动点击"选择本地文件"导入资料或题库时，本应用通过系统文件选择器读取你选中的单个文件。本应用<strong>不会扫描、遍历或访问你设备上的其他文件</strong>，也不申请存储空间的全量读写权限。</p>
+    <p>解析 PDF 或 Word 文件时，文件会被临时复制到应用私有缓存目录，解析完成后立即删除。</p>
+
+    <h3>2.3 AI 生成功能（可选）</h3>
+    <p>本应用的核心检索与问答<strong>默认在设备本地完成</strong>，无需联网。若你希望获得更好的回答质量，可以自行在应用内配置一个大模型服务（兼容 OpenAI 接口格式）。该功能默认关闭，需你主动开启并填写接口地址与密钥。</p>
+    <p>开启后，为实现问答与资料分析，本应用会向<strong>你自行指定的那个服务地址</strong>发送以下内容：</p>
+    <ul>
+      <li>你提出的问题</li>
+      <li>本地检索命中的少量文本片段（通常 3–8 段，而非整篇资料）</li>
+      <li>最近若干轮问答内容（仅在你开启"结合上一轮提问"时）</li>
+    </ul>
+    <div class="note">
+      <strong>重要：</strong>这些请求由你直接发往你填写的服务方，不经过开发者。该服务方如何存储与使用这些内容，取决于你选择的服务的隐私政策，请自行确认。若你不希望任何内容离开设备，请不要开启云端生成，或直接不填写配置——本应用会使用端侧算法回答。
+    </div>
+    <p>你填写的接口地址与密钥仅保存在设备本地，以加密形式存储，不会回传开发者。</p>
+
+    <h3>2.4 跨设备同步（可选）</h3>
+    <p>本应用提供手机与平板之间的学习状态同步，该功能默认关闭，需你主动开启，且要求两台设备登录同一华为账号并处于同一局域网。</p>
+    <p>同步使用 HarmonyOS 系统提供的分布式数据对象能力，在<strong>你的两台设备之间直接传输</strong>。同步内容仅限：最近浏览的资料标题、最近一次提问、更新时间。<strong>不包含资料正文、文本片段、向量数据或问答答案。</strong></p>
+    <p>该链路不经过开发者服务器。</p>
+
+    <h2>三、我们不做什么</h2>
+    <ul>
+      <li>不要求注册账号，不收集手机号、邮箱、身份证等身份信息</li>
+      <li>不收集设备标识符（IMEI、OAID、SN 等）、位置信息、通讯录、相册、麦克风、摄像头数据</li>
+      <li>不集成第三方统计分析、广告、推送或崩溃上报 SDK</li>
+      <li>不进行用户画像、定向推荐，不向任何第三方出售或共享数据</li>
+      <li>不在后台自动联网上传任何内容</li>
+    </ul>
+
+    <h2>四、系统权限说明</h2>
+    <table>
+      <thead>
+        <tr><th style="width:34%">权限</th><th style="width:16%">类型</th><th>用途与触发时机</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>ohos.permission.INTERNET</code></td>
+          <td>系统授权</td>
+          <td>仅在你开启"AI 生成"并主动提问、或使用 AI 分析/出题时，用于访问你自行填写的模型服务地址。不开启则完全不会联网。</td>
+        </tr>
+        <tr>
+          <td><code>ohos.permission.DISTRIBUTED_DATASYNC</code></td>
+          <td>用户授权</td>
+          <td>仅在你于"我的 → 跨设备同步"中主动打开开关时申请，用于在手机与平板间同步学习状态。拒绝授权不影响其他功能。</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>本应用不申请存储、位置、相机、麦克风、通讯录等任何其他权限。文件读取通过系统文件选择器完成，由你逐次授权。</p>
+
+    <h2>五、数据安全</h2>
+    <p>所有本地数据存放于 HarmonyOS 应用沙箱内，其他应用无法直接访问。接口密钥等敏感配置以加密形式存储。</p>
+    <p>由于开发者不持有你的数据，因此不存在"开发者侧数据泄露"的风险；相应地，也<strong>无法为你找回数据</strong>。建议你定期通过应用内的导出功能备份重要记录。</p>
+
+    <h2>六、未成年人保护</h2>
+    <p>本应用是学习工具，不涉及社交、支付、内容分发，适合各年龄段用户使用。我们不会主动收集任何用户的个人信息，包括未成年人的个人信息。若监护人认为存在相关问题，可通过文末方式联系，我们将在核实后处理。</p>
+
+    <h2>七、你的权利</h2>
+    <ul>
+      <li><strong>知情权：</strong>本政策完整说明了数据的处理方式</li>
+      <li><strong>删除权：</strong>在"我的"页面可一键清空全部资料、记录与题库；卸载应用将删除全部本地数据</li>
+      <li><strong>撤回同意：</strong>可随时关闭云端生成与跨设备同步开关，关闭后立即停止对应的数据传输</li>
+      <li><strong>导出权：</strong>问答记录可导出为文本文件，由你自行保存</li>
+    </ul>
+
+    <h2>八、政策更新</h2>
+    <p>若本应用的功能发生变化（例如新增数据上传能力），我们会在应用内以弹窗形式提示，并更新本页面。继续使用即表示你接受更新后的政策；若不接受，可停止使用并卸载应用。</p>
+
+    <h2>九、联系我们</h2>
+    <p>对本政策有任何疑问、意见或投诉，可通过以下方式联系开发者：</p>
+    <ul>
+      <li>邮箱：<a href="mailto:947977931@qq.com">947977931@qq.com</a></li>
+      <li>项目主页：<a href="https://github.com/Gzk0707/CourseAssistant" target="_blank" rel="noopener">github.com/Gzk0707/CourseAssistant</a></li>
+    </ul>
+    <p>我们会在收到后的 15 个工作日内回复。</p>
+  </div>
+
+  <footer>课程知识助手 · 本页面为应用商店上架所需的隐私政策公示页</footer>
+</div>
+</body>
+</html>
